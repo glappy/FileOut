@@ -27,13 +27,13 @@ public class GradeToPrint01 {
 			gradeList.add(gradeVO);
 		}
 
-		String printFile = "D:/bizwork/workspace/ExFiles/gradeList.txt";
+		String saveFile = "D:/bizwork/workspace/ExFiles/gradeList.txt";
 		FileWriter fw;
 		PrintWriter pw;
 		
-	
+
 		try {
-			fw = new FileWriter(printFile);
+			fw = new FileWriter(saveFile);
 			pw = new PrintWriter(fw);
 		for(int i = 0 ; i  < gradeList.size(); i++) {
 			GradeVO vo = gradeList.get(i) ;
